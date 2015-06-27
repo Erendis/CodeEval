@@ -18,5 +18,3 @@ while (<FH>)
 }
 
 close FH;
-
-
