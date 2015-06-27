@@ -3,8 +3,7 @@ use strict;
 
 open FH, "<", $ARGV[0] or die $!;
 
-while (<FH>)
-{
-}
+my $sum = 0;
+while (<FH>) { chomp; $sum += $_; } print $sum;
 
 close FH;
