@@ -7,9 +7,8 @@ while (<FH>)
 {
 	chomp;
 	next if length($_) <= 0;
-	my ($s, $c) = split ",", $_;
-	print rindex($s, $c) . "\n";
+	my ($s, $n) = split /\| /, $_;
+	foreach my $i (split " ", $n) { print substr($s, $i-1, 1); } print "\n";
 }
 
 close FH;
-
