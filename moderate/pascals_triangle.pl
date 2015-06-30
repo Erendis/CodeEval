@@ -2,12 +2,13 @@
 use strict;
 
 open FH, "<", $ARGV[0] or die $!;
+my @aa = ([1], [1,1]);
 
 while (<FH>)
 {
 	chomp;
 	next if (length($_) <= 0 || $_ !~ m/[0-9]+/);
-	my $n = $_; my @aa = ([1], [1,1]);
+	my $n = $_;
 
 	if($n > 2)
 	{
