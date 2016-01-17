@@ -1,4 +1,10 @@
 #!/usr/bin/perl -w
+
+# CHALLENGE DESCRIPTION:
+#
+# You  are  given a sorted list of numbers with duplicates. Print out the sorted
+# list with duplicates removed.
+
 use strict;
 
 open FH, "<", $ARGV[0] or die $!;
