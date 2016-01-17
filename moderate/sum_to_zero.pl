@@ -1,4 +1,10 @@
 #!/usr/bin/perl -w
+
+# CHALLENGE DESCRIPTION:
+#
+# You are given an array of integers. Count the numbers of ways in which the sum
+# of 4 elements in this array results in zero.
+
 use strict;
 
 sub combine;
@@ -20,7 +26,7 @@ sub combine
     }
 
     return @c;
-}
+} # thx StackOverflow
 
 open FH, "<", $ARGV[0] or die $!;
 
@@ -28,13 +34,9 @@ while (<FH>)
 {
     chomp;
     next if length($_) <= 0;
-    my $n = [split ",", $_];
-    my $cnt = 0;
+    my $n = [split ",", $_]; my $cnt = 0;
 
-    foreach (combine $n, 4)
-    {
-        $cnt++ if (eval join '+', @{$_}) == 0;
-    }
+    foreach (combine $n, 4) { $cnt++ if (eval join '+', @{$_}) == 0; }
 
     print "$cnt\n";
 }
