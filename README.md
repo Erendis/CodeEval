@@ -1,2 +1,2 @@
 # CodeEval
-my solutions for the challenges @ codeeval.com (language: perl)
+my solutions of the challenges @ codeeval.com (language: perl)
