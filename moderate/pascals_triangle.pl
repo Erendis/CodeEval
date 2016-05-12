@@ -5,8 +5,6 @@
 # A  Pascals  triangle  row  is  constructed  by looking at the previous row and
 # adding the numbers to its left and right to arrive at the new value. If either
 # the  number to its left/right is not present, substitute a zero in it's place.
-# More  details  can  be found here: Pascal's triangle. E.g. a Pascal's triangle
-# upto a depth of 6 can be shown as:
 
 use strict;
 
